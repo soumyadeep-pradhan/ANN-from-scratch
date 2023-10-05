@@ -6,5 +6,7 @@ weights = [[.2,.8,-.5,1],
            [-.26,-.27,.17,.87]]
 bias = 2
 
-output = np.dot(weights,inputs )+bias
+output = np.dot(weights,inputs)+bias # dont switch weights and inputs order
 print(output)
+
+# np.dot(weights, inputs) = [np.dot(weights[0],inputs), np.dot(weights[1],inputs), np.dot(weights[2],inputs)]
